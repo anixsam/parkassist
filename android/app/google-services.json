@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "286248986172",
+    "firebase_url": "https://manless-parking-system-default-rtdb.firebaseio.com",
+    "project_id": "manless-parking-system",
+    "storage_bucket": "manless-parking-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286248986172:android:e1aecc9a6724e042a8c539",
+        "android_client_info": {
+          "package_name": "com.plutolabs.parkingassist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "286248986172-ktk07o5fpvemsh7fuf2nl32r3v6537el.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE-3niAO-PmK2wysneo8f1u2OyyHcHq_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "286248986172-ktk07o5fpvemsh7fuf2nl32r3v6537el.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
