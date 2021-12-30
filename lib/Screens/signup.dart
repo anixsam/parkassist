@@ -6,6 +6,7 @@ import 'package:provider/src/provider.dart';
 class SignUp extends StatelessWidget {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
+  final TextEditingController nameController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +21,21 @@ class SignUp extends StatelessWidget {
               Container(
                 width: 300,
                 child: TextField(
+                  controller: nameController,
+                  decoration: InputDecoration(
+                    prefixIcon: Icon(
+                      Icons.person,
+                      color: Colors.white,
+                    ),
+                    labelText: "Name",
+                    labelStyle: TextStyle(color: Colors.white),
+                  ),
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+              Container(
+                width: 300,
+                child: TextField(
                   controller: emailController,
                   decoration: InputDecoration(
                     prefixIcon: Icon(
@@ -30,8 +46,10 @@ class SignUp extends StatelessWidget {
                     labelStyle: TextStyle(color: Colors.white),
                   ),
                   style: TextStyle(color: Colors.white),
+                  obscureText: false,
                 ),
               ),
+              SizedBox(height: 20),
               Container(
                 width: 300,
                 child: TextField(
@@ -55,10 +73,8 @@ class SignUp extends StatelessWidget {
                     onPressed: () {
                       context.read<AuthenticationService>().signUp(
                           email: emailController.text.trim(),
-                          password: passwordController.text.trim());
-                      context.read<AuthenticationService>().signIn(
-                          email: emailController.text.trim(),
-                          password: passwordController.text.trim());
+                          password: passwordController.text.trim(),
+                          name: nameController.text.trim());
                     },
                     child: Text("SignUp")),
               ),
@@ -67,7 +83,7 @@ class SignUp extends StatelessWidget {
               ),
               InkWell(
                 child: Text(
-                  "Tap to SignUp",
+                  "Tap to SignIn",
                   style: TextStyle(color: Colors.white),
                 ),
                 onTap: () {

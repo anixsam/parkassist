@@ -64,7 +64,7 @@ class SignIn extends StatelessWidget {
               ),
               InkWell(
                 child: Text(
-                  "Tap to SignIn",
+                  "Tap to SignUp",
                   style: TextStyle(color: Colors.white),
                 ),
                 onTap: () {
